@@ -5,7 +5,7 @@ public class User
     public string Login { get; set; }
     public string Email { get; set; }
     public string PasswordHash { get; set; }
-    public List<Space> spaces { get; set; }
+    public List<Space> Spaces { get; set; }
 
     
 }
