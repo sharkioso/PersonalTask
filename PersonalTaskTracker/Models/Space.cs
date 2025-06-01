@@ -1,7 +1,10 @@
 
+using System.ComponentModel.DataAnnotations;
+
 public class Space
 {
-    public Guid Id { get; set; }
+    [Key]
+    public Guid IdSpace { get; set; } = Guid.NewGuid();
     public string Name { get; set; }
     public Guid IdUser { get; set; }
     public List<Task> Tasks{ get; set; }

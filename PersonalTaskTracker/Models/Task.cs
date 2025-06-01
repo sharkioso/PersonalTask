@@ -1,11 +1,15 @@
 
+using System.ComponentModel.DataAnnotations;
+
 public class Task
 {
-    public Guid Id { get; set; }
+    [Key]
+    public Guid IdTask { get; set; } = Guid.NewGuid();
+    public Guid IdSpace{ get; set; }
     public string Name { get; set; }
     public string Discription { get; set; }
-    public TaskStatus status { get; set; }
-    
+    public TaskStatus Status { get; set; }
+
     public Space Space { get; set; }
 
 }
